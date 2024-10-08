@@ -1,0 +1,39 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+.form {
+  justify-self: center;
+  border: 1px $Gray-800 solid;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 38.125vw;
+  max-width: 610px;
+  align-self: center;
+  z-index: 10;
+
+  &_inputs {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    &_label {
+      @include book-16;
+    }
+  }
+
+  &_navigation {
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    border-top: 1px solid $Gray-800;
+
+    &_button {
+      a {
+        color: unset;
+      }
+    }
+  }
+}

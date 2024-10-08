@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Typeface";
+  src: url("../public/fonts/SuisseIntl-Regular.otf"),
+    url("../public/fonts/SuisseIntl-Black.otf"),
+    url("../public/fonts/SuisseIntl-BlackItalic.otf"),
+    url("../public/fonts/SuisseIntl-Bold.otf"),
+    url("../public/fonts/SuisseIntl-BoldItalic.otf"),
+    url("../public/fonts/SuisseIntl-Book.otf"),
+    url("../public/fonts/SuisseIntl-BookItalic.otf"),
+    url("../public/fonts/SuisseIntl-Light.otf"),
+    url("../public/fonts/SuisseIntl-LightItalic.otf"),
+    url("../public/fonts/SuisseIntl-Medium.otf"),
+    url("../public/fonts/SuisseIntl-LightItalic.otf"),
+    url("../public/fonts/SuisseIntl-RegularItalic.otf"),
+    url("../public/fonts/SuisseIntl-SemiBold.otf"),
+    url("../public/fonts/SuisseIntl-SemiBoldItalic.otf"),
+    url("../public/fonts/SuisseIntl-Thin.otf"),
+    url("../public/fonts/SuisseIntl-ThinItalic.otf"),
+    url("../public/fonts/SuisseIntl-Ultralight.otf"),
+    url("../public/fonts/SuisseIntl-UltralightItalic.otf");
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  gap: 128px;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.3) 0%, #0a0a0a 100%),
+    url("../public/backImage.png") no-repeat center center;
+  background-color: #0a0a0a;
+  background-size: cover;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+}

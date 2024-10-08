@@ -1,0 +1,94 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+@import "./dimensions.scss";
+
+.main {
+  background-color: $Gray-950;
+}
+
+.content {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  z-index: 10;
+}
+
+.calculator {
+  height: max-content;
+  padding: 16px 8px;
+  width: 428px;
+  border: 1px solid $Gray-800;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: $Micro-MD;
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: $RelatedElementsSM $RelatedElementsLG $RelatedElementsSM
+      $RelatedElementsLG;
+    gap: $Micro-MD;
+
+    &_result {
+      @include Title-1;
+      color: $Token-Text-Secondary;
+      align-self: flex-end;
+    }
+
+    &_inputs {
+      @include Headline-3;
+      color: $Token-Text-Primary;
+      text-align: right;
+    }
+  }
+
+  &_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  &_paragraph {
+    @include book-16;
+    width: 34.25vw;
+    max-width: 548px;
+    color: $white;
+  }
+}
+
+.orange {
+  color: $Token-Button-Primary-Surface-Default;
+}
+
+.button {
+  width: 83px;
+  height: 80px;
+  padding: $RelatedElementsSM;
+  border-radius: $XL-2;
+  @include Title-1;
+  text-align: center;
+  color: $Token-Text-Primary;
+
+  &_grey {
+    background: $Token-Button-Secondary-Gray-Surface-Default;
+  }
+
+  &_orange {
+    background: $Token-Button-Primary-Surface-Default;
+  }
+
+  &_black {
+    background: $Token-Button-Secondary-White-Surface-Default;
+  }
+  &_double {
+    width: 182px;
+    text-align: left;
+  }
+}

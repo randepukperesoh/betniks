@@ -1,0 +1,51 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/dimensions.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 16px 24px;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(6px);
+  color: white;
+  align-items: center;
+  border-image-source: radial-gradient(circle, $gradientStart, $gradientEnd);
+  border-image-slice: 1;
+  border-bottom: 1px solid;
+  z-index: 10;
+
+  &_icon {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  &_navigation {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    @include regular-14;
+
+    * {
+      color: $Gray-400;
+    }
+    &_active {
+      color: $white;
+    }
+  }
+  &_user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include regular-14;
+    color: $white;
+
+    &_avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: $max-border;
+    }
+  }
+}

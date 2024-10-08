@@ -1,0 +1,52 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  &_gradients {
+    position: absolute;
+    top: -79px;
+    left: -20px;
+    width: 652.15px;
+    height: 544.89px;
+
+    &_gradient {
+      position: absolute;
+      width: 67.14px;
+      height: 602px;
+      top: -90.5px;
+      left: 70px;
+      opacity: 0.15;
+      transform: rotate(-40.31deg);
+      filter: blur(35.75px);
+      background: linear-gradient(180deg, $white 0%, $gradientEnd);
+    }
+
+    &_gradient2 {
+      position: absolute;
+      width: 67.77px;
+      height: 602px;
+      top: -57.15px;
+      left: 351px;
+      opacity: 0.15;
+      transform: rotate(-40.31deg);
+      filter: blur(35px);
+      background: linear-gradient(180deg, $white 0%, $gradientEnd);
+    }
+
+    &_elipse {
+      position: absolute;
+      width: 495.96px;
+      height: 362.44px;
+      opacity: 0.1;
+
+      background: $white;
+      filter: blur(150px);
+    }
+  }
+}

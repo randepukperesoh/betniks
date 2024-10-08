@@ -1,0 +1,22 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+button.button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  background: $Gray-50;
+  color: $Gray-950;
+  width: 100%;
+  box-shadow: 0px 2px 0px 0px $white inset;
+  @include book-16;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  text-align: center;
+  a {
+    color: unset;
+  }
+}
